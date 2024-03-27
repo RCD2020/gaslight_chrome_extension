@@ -1,0 +1,17 @@
+{
+    "manifest_version": 3,
+    "name": "Gaslight",
+    "description": "Gaslight those who leave their computers unlocked",
+    "version": "1.0.0",
+    "action": {
+        "default_popup": "settings.html"
+    },
+    "content_scripts": [
+        {
+            "js": ["gaslight.js"],
+            "matches": [
+                "<all_urls>"
+            ]
+        }
+    ]
+}
